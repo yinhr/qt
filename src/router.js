@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Signin from './component/Signin.vue'
+import Signin from './components/Signin.vue'
 
 Vue.use(Router)
 

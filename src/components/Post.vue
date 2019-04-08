@@ -1,9 +1,9 @@
 <template>
-  <div class="block md:flex m-auto max-w-xl">
+  <div class="block md:flex mx-auto mt-8 max-w-xl">
     <div id="left-content" class="">
       some
     </div>
-    <div class="my-4 px-6 py-4 text-left bg-white">
+    <div class="px-6 py-4 text-left bg-white">
       <div class="mb-4 flex flex-wrap">
         <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
         <div class="mx-3 my-auto text-base">@Jonathan Reinink</div>

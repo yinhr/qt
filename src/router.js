@@ -4,6 +4,8 @@ import Home from './components/Home.vue'
 import Signin from './components/Signin.vue'
 import Signup from './components/Signup.vue'
 import Post from './components/Post.vue'
+import Search from './components/Search.vue'
+import MyPage from './components/MyPage.vue'
 
 Vue.use(Router)
 
@@ -38,6 +40,16 @@ export default new Router({
       path: '/post',
       name: 'post',
       component: Post
+    },
+    {
+      path: '/sarch',
+      name: 'search',
+      component: Search
+    },
+    {
+      path: '/mypage',
+      name: 'mypage',
+      component: MyPage
     }
   ]
 })

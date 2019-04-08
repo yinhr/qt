@@ -1,6 +1,6 @@
 <template>
-  <div class="m-auto my-4 px-6 py-4 max-w-lg text-left">
-    <h2 class="mb-3">Timeline</h2>
+  <div class="mx-auto mt-4 px-6 py-4 max-w-xl text-left">
+    <h2 class="mb-3"><span class="mr-3"><font-awesome-icon icon="stream" class="text-2xl"/></span>タイムライン</h2>
     <div class="my-1 px-4 py-4 m-auto rounded bg-white overflow-hidden flex">
       <div class="mr-3">
         <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">

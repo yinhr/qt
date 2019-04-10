@@ -27,6 +27,20 @@
         </li>
       </ul>
       <Cards v-bind:cards="cards"></Cards>
+      <paginate
+        :page-count="10"
+        :page-range="1"
+        :prev-text="'Prev'"
+        :next-text="'Next'"
+        :container-class="'pagination list-reset inline-flex my-3 font-semibold bg-white text-blue'"
+        :page-class="'border-t border-b border-r hover:bg-blue-lightest'"
+        :page-link-class="'block text-center align-middle p-2'"
+        :prev-class="'border rounded-l hover:bg-blue-lightest'"
+        :prev-link-class="'block w-12 text-center align-middle p-2'"
+        :next-class="'border-t border-b border-r rounded-r hover:bg-blue-lightest'"
+        :next-link-class="'block w-12 text-center align-middle p-2'"
+      >
+      </paginate>
     </div>
   </div>
 </template>
@@ -76,8 +90,147 @@ export default {
           ],
           imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
         },
+        { 
+          id: 3,
+          title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 4,
+          title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 5,
+          title: "very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 6,
+          title: "very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 7,
+          title: "very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 8,
+          title: "very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 9,
+          title: "very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 10,
+          title: "very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
       ]
     }
   }
 }
 </script>
+
+<style>
+.pagination li.disabled {
+  color: #b8c2cc;
+}
+
+.pagination li.active {
+  color: #ffffff;
+  background-color: #3490dc;
+}
+
+.pagination li.disabled a {
+  pointer-events: none;
+}
+
+.pagination li.active a {
+  pointer-events: none;
+}
+</style>

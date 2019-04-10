@@ -1,54 +1,57 @@
 <template>
   <div class="mx-auto mt-4 px-6 py-4 max-w-xl text-left">
     <h2 class="mb-3"><span class="mr-3"><font-awesome-icon icon="stream" class="text-2xl"/></span>タイムライン</h2>
-    <div class="my-1 px-4 py-4 m-auto rounded bg-white overflow-hidden flex">
-      <div class="mr-3">
-        <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
-      </div>
-      <div class="flex-1">
-        <router-link to="/post" class="no-underline font-bold text-xl text-black hover:text-blue">
-          <div class="mb-2">Long Long Long Long Long Long long long Title of the Content</div>
-        </router-link>
-        <div class="font-semibold text-sm mb-1">
-          <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
-            #rails
-          </span>
-          <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
-            #Vue.js
-          </span>
-        </div>
-        <div class="text-sm flex flex-wrap">
-          <div class="mr-3">Jonathan Reinink</div>
-          <div class="mr-3">2019 Apr 4</div>
-          <div class="mr-3">いいね 188</div>
-        </div>
-      </div>
-    </div>
-    <div class="my-1 px-4 py-4 m-auto rounded bg-white overflow-hidden flex">
-      <div class="mr-3">
-        <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
-      </div>
-      <div class="flex-1">
-        <router-link to="/post" class="no-underline font-bold text-xl text-black hover:text-blue">
-          <div class="mb-2">Long Long Long Long Long Long long long Title of the Content</div>
-        </router-link>
-        <div class="font-semibold text-sm mb-1">
-          <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
-            #rails
-          </span>
-          <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
-            #Vue.js
-          </span>
-        </div>
-        <div class="text-sm flex flex-wrap">
-          <div class="mr-3">Jonathan Reinink</div>
-          <div class="mr-3">2019 Apr 4</div>
-          <div class="mr-3">いいね 188</div>
-        </div>
-      </div>
-    </div>
+    <Cards v-bind:cards="cards"></Cards>
   </div>
 </template>
 
 <script>
+import Cards from '@/components/Cards.vue'
+
+export default {
+  components: {
+    Cards
+  },
+  data: function() {
+    return {
+      cards: [
+        { 
+          id: 1,
+          title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 4",
+          numberOfLike: 108,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+        { 
+          id: 2,
+          title: "【私的最強alias32選】忘れやすいコマンドは、『辞書化＆ショートカット化』しちゃえばいい",
+          author: "Jonathan Reinink",
+          createdOn: "2019 Apr 10",
+          numberOfLike: 18,
+          tags: [ 
+            { id: 1, name: "Rails" },
+            { id: 2, name: "Vue" },
+            { id: 3, name: "HTTP" },
+            { id: 4, name: "Mac" },
+            { id: 5, name: "CSS" },
+            { id: 6, name: "LongLongLongTitleOfTag" },
+            { id: 7, name: "Linux" },
+            { id: 8, name: "AWS" },
+            { id: 9, name: "Firebase" },
+            { id: 10, name: "Larabel" },
+          ],
+          imgSrc: "https://tailwindcss.com/img/jonathan.jpg"
+        },
+      ]
+    }
+  }
+}
 </script>

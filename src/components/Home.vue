@@ -1,20 +1,20 @@
 <template>
   <div class="mx-auto mt-4 px-6 py-4 max-w-xl text-left">
     <h2 class="mb-3"><span class="mr-3"><font-awesome-icon icon="stream" class="text-2xl"/></span>タイムライン</h2>
-    <Cards v-bind:cards="cards"></Cards>
+    <PostList v-bind:posts="posts"></PostList>
   </div>
 </template>
 
 <script>
-import Cards from '@/components/Cards.vue'
+import PostList from '@/components/PostList.vue'
 
 export default {
   components: {
-    Cards
+    PostList
   },
   data: function() {
     return {
-      cards: [
+      posts: [
         { 
           id: 1,
           title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",

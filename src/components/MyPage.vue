@@ -12,26 +12,26 @@
       </div>
     </div>
     <div class="w-full md:w-3/4 px-2 text-sm">
-      <ul class="list-reset md:flex">
-        <li class="border-b-2 border-orange-light">
-          <a class="no-underline inline-block py-2 px-4 text-orange font-semibold" href="#">投稿一覧</a>
+      <ul class="list-reset md:flex menutab">
+        <li>
+          <a @click="activetab=1" v-bind:class="[ activetab === 1 ? 'activetab' : '' ]" href="#">投稿一覧</a>
         </li>
-        <li class="border-b-2 hover:border-orange-light">
-          <a class="no-underline inline-block py-2 px-4 text-blue hover:text-orange font-semibold" href="#">フォロータグ</a>
+        <li>
+          <a @click="activetab=2" v-bind:class="[ activetab === 2 ? 'activetab' : '' ]" href="#">フォロータグ</a>
         </li>
-        <li class="border-b-2 hover:border-orange-light">
-          <a class="no-underline inline-block py-2 px-4 text-blue hover:text-orange font-semibold" href="#">フォロー</a>
+        <li>
+          <a @click="activetab=3" v-bind:class="[ activetab === 3 ? 'activetab' : '' ]" href="#">フォロー</a>
         </li>
-        <li class="border-b-2 hover:border-orange-light">
-          <a class="no-underline inline-block py-2 px-4 text-blue hover:text-orange font-semibold" href="#">フォロワー</a>
+        <li>
+          <a @click="activetab=4" v-bind:class="[ activetab === 4 ? 'activetab' : '' ]" href="#">フォロワー</a>
         </li>
       </ul>
-      <Cards v-bind:cards="cards"></Cards>
+      <PostList v-bind:posts="posts"></PostList>
       <paginate
-        :page-count="10"
+        v-bind:page-count="pageCount"
         :page-range="1"
-        :prev-text="'Prev'"
-        :next-text="'Next'"
+        :prev-text="'prev'"
+        :next-text="'next'"
         :container-class="'pagination list-reset inline-flex my-3 font-semibold bg-white text-blue'"
         :page-class="'border-t border-b border-r hover:bg-blue-lightest'"
         :page-link-class="'block text-center align-middle p-2'"
@@ -46,15 +46,23 @@
 </template>
 
 <script>
-import Cards from '@/components/Cards.vue'
+import PostList from '@/components/PostList.vue'
 
 export default {
   components: {
-    Cards
+    PostList
+  },
+  computed: {
+    pageCount: function() {
+      return Math.ceil(this.totalPostsCount / this.postsPerPage)
+    }
   },
   data: function() {
     return {
-      cards: [
+      totalPostsCount: 136,
+      postsPerPage: 10,
+      activetab: 1,
+      posts: [
         { 
           id: 1,
           title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",
@@ -232,5 +240,21 @@ export default {
 
 .pagination li.active a {
   pointer-events: none;
+}
+
+.menutab a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #3490dc;
+  font-weight: 600;
+}
+
+.menutab a:hover {
+  color: #f6993f;
+}
+
+.menutab .activetab {
+  color: #f6993f;
 }
 </style>

@@ -42,7 +42,7 @@ export default {
             { id: 3, name: "HTTP" },
             { id: 4, name: "Mac" },
             { id: 5, name: "CSS" },
-            { id: 6, name: "LongLongLongTitleOfTag" },
+            { id: 6, name: "LongLongLongTitleOfTagLongLongll" },
             { id: 7, name: "Linux" },
             { id: 8, name: "AWS" },
             { id: 9, name: "Firebase" },

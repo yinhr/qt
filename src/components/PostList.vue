@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  props:{ 
+  props: { 
     posts: {
       type: Array
     }

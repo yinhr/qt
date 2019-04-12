@@ -6,6 +6,10 @@ import Signup from './components/Signup.vue'
 import Post from './components/Post.vue'
 import Search from './components/Search.vue'
 import MyPage from './components/MyPage.vue'
+import MyPosts from './components/MyPosts.vue'
+import MyTags from './components/MyTags.vue'
+import MyFollowings from './components/MyFollowings.vue'
+import MyFollowers from './components/MyFollowers.vue'
 
 Vue.use(Router)
 
@@ -48,8 +52,27 @@ export default new Router({
     },
     {
       path: '/mypage',
+      redirect: '/mypage/posts',
       name: 'mypage',
-      component: MyPage
+      component: MyPage,
+      children: [
+        {
+          path: 'posts',
+          component: MyPosts
+        },
+        {
+          path: 'tags',
+          component: MyTags
+        },
+        {
+          path: 'followings',
+          component: MyFollowings
+        },
+        {
+          path: 'followers',
+          component: MyFollowers
+        }
+      ]
     }
   ]
 })

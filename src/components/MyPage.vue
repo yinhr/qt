@@ -7,8 +7,8 @@
       <div class="py-1">Jonathan Reinink</div>
       <div class="py-1">@JonathanReinink</div>
       <div class="py-3">
-        <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-2 rounded">
-            <font-awesome-icon icon="plus" class="text-xs mx-1"/>
+        <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-2 rounded text-xs">
+            <font-awesome-icon icon="plus" class="text-xs"/>
             <font-awesome-icon icon="user" class="text-xs mr-1"/>フォロー
         </button>
       </div>
@@ -20,22 +20,22 @@
       <ul class="list-reset md:flex menutab">
         <li>
           <router-link to="/mypage/posts" v-bind:class="[ activetab === 1 ? 'activetab' : '' ]">
-            投稿一覧
+            <font-awesome-icon icon="clone" class="text-xs mr-1"/>投稿 100
           </router-link>
         </li>
         <li>
           <router-link to="/mypage/tags" v-bind:class="[ activetab === 2 ? 'activetab' : '' ]">
-            フォロータグ
+            <font-awesome-icon icon="tags" class="text-xs mr-1"/>フォロータグ 21
           </router-link>
         </li>
         <li>
           <router-link to="/mypage/followings" v-bind:class="[ activetab === 3 ? 'activetab' : '' ]">
-            フォロー
+            <font-awesome-icon icon="user-friends" class="text-xs mr-1"/>フォロー 321
           </router-link>
         </li>
         <li>
           <router-link to="/mypage/followers" v-bind:class="[ activetab === 4 ? 'activetab' : '' ]">
-            フォロワー
+            <font-awesome-icon icon="users" class="text-xs mr-1"/>フォロワー 5431
           </router-link>
         </li>
       </ul>

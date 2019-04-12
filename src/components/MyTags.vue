@@ -7,7 +7,7 @@
         </div>
         <div class="pr-3 self-center">
           <button class="text-xs text-white font-semibold px-1 py-2 bg-blue rounded w-24">
-            <font-awesome-icon icon="plus" class="text-xs mx-1"/>
+            <font-awesome-icon icon="plus" class="text-xs"/>
             <font-awesome-icon icon="tag" class="text-xs mr-1"/>フォロー
           </button>
         </div>

@@ -1,16 +1,17 @@
 <template>
-  <div class="block md:flex mx-auto mt-8 max-w-xl">
-    <div id="left-content" class="">
-      some
+  <div class="md:flex md:mt-8 mx-auto max-w-2xl text-sm">
+    <div class="hidden xl:block px-5">
+      <div class="py-3 sticky like">123</div>
+      <button class="hover:bg-blue-lightest border-2 border-blue shadow like-button bg-white w-16 h-16 rounded-full sticky"><font-awesome-icon icon="thumbs-up" class="text-3xl"/></button>
     </div>
     <div class="px-6 py-4 text-left bg-white">
-      <div class="mb-4 flex flex-wrap">
+      <div class="py-1 flex flex-wrap">
         <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
-        <div class="mx-3 my-auto text-base">@Jonathan Reinink</div>
-        <div class="mx-3 my-auto text-base">Updated on 2019 Apr 4</div>
+        <div class="px-3 self-center text-base">@Jonathan Reinink</div>
+        <div class="px-3 self-center text-base">Updated on 2019 Apr 4</div>
       </div>
-      <h1 class="my-5">Long Long Long Long Long Long long long Title of the Content</h1>
-      <div class="font-semibold text-sm mb-3">
+      <h1 class="py-2">Long Long Long Long Long Long long long Title of the Content</h1>
+      <div class="font-semibold pt-2 pb-5">
         <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
           #rails
         </span>
@@ -23,7 +24,7 @@
        <textarea :value="input" @input="update"></textarea>
      </div>
     </div>
-    <div id="right-content" class="hidden md:block">
+    <div class="hidden md:block">
       some
     </div>
   </div>
@@ -144,6 +145,14 @@ export default {
 
 <style>
 @import url("../../node_modules/highlightjs/styles/zenburn.css");
+
+.like {
+  top: 20vh;
+}
+
+.like-button {
+  top: 27vh;
+}
 
 textarea, #editor div {
   display: inline-block;

@@ -1,6 +1,6 @@
 <template>
-  <div class="md:flex max-w-2xl mx-auto mt-8">
-    <div class="bg-white shadow p-3 mx-auto max-w-xs md:w-1/4 self-start">
+  <div class="md:flex max-w-2xl mx-auto md:mt-8">
+    <div class="bg-white shadow p-3 md:w-1/4 self-start">
       <div class="py-1">
         <img class="w-32 h-32 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
       </div>
@@ -17,25 +17,30 @@
       </div>
     </div>
     <div class="w-full md:w-3/4 md:px-2 text-sm">
-      <ul class="list-reset md:flex menutab">
+      <ul class="list-reset md:flex md:flex-wrap menutab">
         <li>
-          <router-link to="/mypage/posts" v-bind:class="[ activetab === 1 ? 'activetab' : '' ]">
+          <router-link to="/yinhr/posts" v-bind:class="[ activetab === 1 ? 'activetab' : '' ]">
             <font-awesome-icon icon="clone" class="text-xs mr-1"/>投稿 100
           </router-link>
         </li>
         <li>
-          <router-link to="/mypage/tags" v-bind:class="[ activetab === 2 ? 'activetab' : '' ]">
+          <router-link to="/yinhr/tags" v-bind:class="[ activetab === 2 ? 'activetab' : '' ]">
             <font-awesome-icon icon="tags" class="text-xs mr-1"/>フォロータグ 21
           </router-link>
         </li>
         <li>
-          <router-link to="/mypage/followings" v-bind:class="[ activetab === 3 ? 'activetab' : '' ]">
+          <router-link to="/yinhr/followings" v-bind:class="[ activetab === 3 ? 'activetab' : '' ]">
             <font-awesome-icon icon="user-friends" class="text-xs mr-1"/>フォロー 321
           </router-link>
         </li>
         <li>
-          <router-link to="/mypage/followers" v-bind:class="[ activetab === 4 ? 'activetab' : '' ]">
+          <router-link to="/yinhr/followers" v-bind:class="[ activetab === 4 ? 'activetab' : '' ]">
             <font-awesome-icon icon="users" class="text-xs mr-1"/>フォロワー 5431
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/yinhr/like" v-bind:class="[ activetab === 5 ? 'activetab' : '' ]">
+            <font-awesome-icon icon="thumbs-up" class="text-xs mr-1"/>いいね 99 
           </router-link>
         </li>
       </ul>

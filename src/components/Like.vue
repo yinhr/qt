@@ -1,59 +1,20 @@
 <template>
-  <div class="md:flex mx-auto py-4 max-w-2xl text-left">
-    <div class="w-full md:w-2/3 text-center">
-      <form class="w-full">
-        <div class="flex items-stretch">
-          <input type="text" class="border appearance-none p-1 w-full">
-          <button class="w-32 bg-blue border rounded ml-3 text-white hover:bg-blue-dark"><font-awesome-icon icon="search" class="text-sm text-white hover:text-blue-light mr-1"/>検索</button>
-        </div>
-      </form>
-      <div class="text-right mt-3">
-        <button class="border bg-white rounded px-2 py-1"><font-awesome-icon icon="sort-amount-down" class="mx-1 text-sm"/>日付順</button>
-      </div>
-      <PostList v-bind:posts="posts"></PostList>
-      <paginate
-        v-bind:page-count="pageCount"
-        :page-range="1"
-        :prev-text="'prev'"
-        :next-text="'next'"
-        :container-class="'pagination list-reset inline-flex my-3 font-semibold bg-white text-blue'"
-        :page-class="'border-t border-b border-r hover:bg-blue-lightest'"
-        :page-link-class="'block text-center align-middle p-2'"
-        :prev-class="'border rounded-l hover:bg-blue-lightest'"
-        :prev-link-class="'block w-12 text-center align-middle p-2'"
-        :next-class="'border-t border-b border-r rounded-r hover:bg-blue-lightest'"
-        :next-link-class="'block w-12 text-center align-middle p-2'"
-      >
-      </paginate>
-    </div>
-    <div class="w-full md:w-1/3 px-2">
-      <div class="bg-white w-full h-64 text-center p-5">
-        <div class="break-words h-24 flex justify-center items-center">
-          <div class="break-words w-full">
-            <h3>Rails</h3>
-          </div>
-        </div>
-        <div class="flex py-3">
-          <div class="w-1/2 border-r">
-            <p>123</p>
-            <p class="text-sm py-1">記事</p>
-          </div>
-          <div class="w-1/2">
-            <p>123</p>
-            <p class="text-sm py-1">フォロワー</p>
-          </div>
-        </div>
-        <div class="py-3">
-          <button class="text-xs text-white font-semibold px-1 py-2 bg-blue rounded w-24">
-            <font-awesome-icon icon="plus" class="text-xs"/>
-            <font-awesome-icon icon="tag" class="text-xs mr-1"/>フォロー
-          </button>
-        </div>
-      </div>
-      <div class="mt-3 p-3 bg-white border w-full h-64">
-        <div class="text-sm"><font-awesome-icon icon="search" class="text-sm"/>検索オプション</div>
-      </div>
-    </div>
+  <div>
+    <PostList v-bind:posts="posts"></PostList>
+    <paginate
+      v-bind:page-count="pageCount"
+      :page-range="1"
+      :prev-text="'prev'"
+      :next-text="'next'"
+      :container-class="'pagination list-reset inline-flex my-3 font-semibold bg-white text-blue'"
+      :page-class="'border-t border-b border-r hover:bg-blue-lightest'"
+      :page-link-class="'block text-center align-middle p-2'"
+      :prev-class="'border rounded-l hover:bg-blue-lightest'"
+      :prev-link-class="'block w-12 text-center align-middle p-2'"
+      :next-class="'border-t border-b border-r rounded-r hover:bg-blue-lightest'"
+      :next-link-class="'block w-12 text-center align-middle p-2'"
+    >
+    </paginate>
   </div>
 </template>
 
@@ -74,8 +35,8 @@ export default {
   },
   data: function() {
     return {
-      tabId: 1,
-      totalPostsCount: 136,
+      tabId: 5,
+      totalPostsCount: 99,
       postsPerPage: 10,
       posts: [
         { 

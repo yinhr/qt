@@ -31,7 +31,7 @@
             <font-awesome-icon icon="th" class="text-xl text-white cursor-pointer hover:text-blue-light"/>
             <transition>
               <div v-if="isActive" class="w-48 absolute z-20 pin-r my-5 bg-white shadow-md rounded text-left text-sm">
-                <router-link to="/mypage" class="no-underline">
+                <router-link to="/yinhr" class="no-underline">
                   <div class="mx-2 p-2 border-b">
                     <p class="text-black hover:text-blue">
                       <span class="mr-2"><font-awesome-icon icon="user"/></span>
@@ -39,7 +39,7 @@
                     </p>
                   </div>
                 </router-link>
-                <router-link to="/" class="no-underline">
+                <router-link to="/yinhr/drafts/new" class="no-underline">
                   <div class="mx-2 p-2">
                     <p class="text-black hover:text-blue">
                       <span class="mr-2"><font-awesome-icon icon="edit"/></span>
@@ -47,7 +47,7 @@
                     </p>
                   </div>
                 </router-link>
-                <router-link to="/" class="no-underline">
+                <router-link to="/yinhr/drafts" class="no-underline">
                   <div class="mx-2 p-2">
                     <p class="text-black hover:text-blue">
                       <span class="mr-2"><font-awesome-icon icon="list"/></span>
@@ -55,7 +55,7 @@
                     </p>
                   </div>
                 </router-link>
-                <router-link to="/" class="no-underline">
+                <router-link to="/yinhr/like" class="no-underline">
                   <div class="mx-2 p-2 border-b">
                     <p class="text-black hover:text-blue">
                       <span class="mr-2"><font-awesome-icon icon="thumbs-up"/></span>
@@ -79,7 +79,7 @@
                     </p>
                   </div>
                 </router-link>
-                <router-link to="/about" class="no-underline">
+                <router-link to="/" class="no-underline">
                   <div class="mx-2 p-2">
                     <p class="text-black hover:text-blue">
                       <span class="mr-2"><font-awesome-icon icon="sign-out-alt"/></span>

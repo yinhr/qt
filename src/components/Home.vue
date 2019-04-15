@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-auto mt-4 px-6 py-4 max-w-xl text-left">
-    <h2 class="mb-3"><span class="mr-3"><font-awesome-icon icon="stream" class="text-2xl"/></span>タイムライン</h2>
+  <div class="mx-auto py-4 max-w-xl text-left">
+    <h2 class="pl-3 mb-3"><span class="mr-3"><font-awesome-icon icon="stream" class="text-2xl"/></span>タイムライン</h2>
     <PostList v-bind:posts="posts"></PostList>
   </div>
 </template>

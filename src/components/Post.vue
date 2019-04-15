@@ -1,7 +1,7 @@
 <template>
   <div class="md:flex md:mt-8 mx-auto max-w-2xl text-sm">
     <div class="hidden xl:block px-5">
-      <div class="py-3 sticky like">123</div>
+      <div class="py-3 sticky like font-semibold text-blue">123</div>
       <button class="hover:bg-blue-lightest border-2 border-blue shadow like-button bg-white w-16 h-16 rounded-full sticky"><font-awesome-icon icon="thumbs-up" class="text-3xl"/></button>
     </div>
     <div class="px-6 py-4 text-left bg-white">
@@ -19,10 +19,10 @@
           #Vue.js
         </span>
       </div>
+      <div class="text-center xl:hidden">
+        <button class="border-2 border-blue rounded bg-white w-64 h-10 sticky"><font-awesome-icon icon="thumbs-up" class="text-md"/><span class="px-3">123</span></button>
+      </div>
      <div id="compiledPost" v-html="compiledHTML"></div>
-     <div id="editor">
-       <textarea :value="input" @input="update"></textarea>
-     </div>
     </div>
     <div class="hidden md:block">
       some
@@ -38,7 +38,6 @@ import _ from 'lodash';
 export default {
   data() {
     return {
-      markedContent: '',
       input: '# hello'
     }
   },
@@ -147,31 +146,11 @@ export default {
 @import url("../../node_modules/highlightjs/styles/zenburn.css");
 
 .like {
-  top: 20vh;
+  top: 100px;
 }
 
 .like-button {
-  top: 27vh;
-}
-
-textarea, #editor div {
-  display: inline-block;
-  width: 100%;
-  height: 500px;
-  vertical-align: top;
-  box-sizing: border-box;
-  padding: 0 20px;
-}
-
-textarea {
-  border: none;
-  border-right: 1px solid #ccc;
-  resize: none;
-  outline: none;
-  background-color: #f6f6f6;
-  font-size: 14px;
-  font-family: 'Monaco', courier, monospace;
-  padding: 20px;
+  top: 145px;
 }
 
 #compiledPost table tbody tr:nth-child(odd) {

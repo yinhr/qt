@@ -10,6 +10,9 @@ import MyPosts from './components/MyPosts.vue'
 import MyTags from './components/MyTags.vue'
 import MyFollowings from './components/MyFollowings.vue'
 import MyFollowers from './components/MyFollowers.vue'
+import Like from './components/Like.vue'
+import Drafts from './components/Drafts.vue'
+import NewPost from './components/NewPost.vue'
 
 Vue.use(Router)
 
@@ -46,14 +49,13 @@ export default new Router({
       component: Post
     },
     {
-      path: '/sarch',
+      path: '/search',
       name: 'search',
       component: Search
     },
     {
-      path: '/mypage',
-      redirect: '/mypage/posts',
-      name: 'mypage',
+      path: '/:id',
+      redirect: '/:id/posts',
       component: MyPage,
       children: [
         {
@@ -71,8 +73,20 @@ export default new Router({
         {
           path: 'followers',
           component: MyFollowers
-        }
+        },
+        {
+          path: 'like',
+          component: Like
+        },
       ]
+    },
+    {
+      path: '/:id/drafts',
+      component: Drafts,
+    },
+    {
+      path: '/:id/drafts/new',
+      component: NewPost
     }
   ]
 })

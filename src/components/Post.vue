@@ -29,9 +29,11 @@
     </div>
     <div class="w-full bg-white mt-10 py-24">
      <div class="flex flex-grow w-full lg:max-w-3xl lg:mx-auto">
-       <div class="w-full lg:w-7/10 lg:ml-32 lg:mr-64 border rounded">
+       <div class="hidden lg:block lg:w-1/10"></div>
+       <div class="w-full lg:w-7/10 border rounded">
          <textarea  class="text-sm p-3 w-full h-32 resize-none border rounded" placeholder="コメントを投稿"></textarea>
        </div>
+       <div class="hidden lg:block lg:w-2/10"></div>
      </div>
     </div>
   </div>

@@ -1,31 +1,38 @@
 <template>
-  <div class="md:flex md:mt-8 mx-auto max-w-2xl text-sm">
-    <div class="hidden xl:block px-5">
-      <div class="py-3 sticky like font-semibold text-blue">123</div>
-      <button class="hover:bg-blue-lightest border-2 border-blue shadow like-button bg-white w-16 h-16 rounded-full sticky"><font-awesome-icon icon="thumbs-up" class="text-3xl"/></button>
+  <div>
+    <div class="lg:flex lg:mt-8 mx-auto max-w-3xl text-sm">
+      <div class="hidden lg:block lg:w-1/10">
+        <div class="py-3 sticky like font-semibold text-blue">123</div>
+        <button class="hover:bg-blue-lightest border-2 border-blue shadow like-button bg-white w-16 h-16 rounded-full sticky"><font-awesome-icon icon="thumbs-up" class="text-3xl"/></button>
+      </div>
+      <div class="px-6 py-4 text-left bg-white w-full lg:w-7/10">
+        <div class="py-1 flex flex-wrap">
+          <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+          <div class="px-3 self-center text-base">@Jonathan Reinink</div>
+          <div class="px-3 self-center text-base">Updated on 2019 Apr 4</div>
+        </div>
+        <h1 class="py-2">Long Long Long Long Long Long long long Title of the Content</h1>
+        <div class="font-semibold pt-2 pb-5">
+          <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
+            #rails
+          </span>
+          <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
+            #Vue.js
+          </span>
+        </div>
+        <div class="text-center lg:hidden">
+          <button class="border-2 border-blue rounded bg-white w-64 h-10 sticky"><font-awesome-icon icon="thumbs-up" class="text-md"/><span class="px-3">123</span></button>
+        </div>
+       <div id="compiledPost" v-html="compiledHTML"></div>
+      </div>
+      <div class="hidden lg:block lg:w-2/10">sdfsdf</div>
     </div>
-    <div class="px-6 py-4 text-left bg-white">
-      <div class="py-1 flex flex-wrap">
-        <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
-        <div class="px-3 self-center text-base">@Jonathan Reinink</div>
-        <div class="px-3 self-center text-base">Updated on 2019 Apr 4</div>
-      </div>
-      <h1 class="py-2">Long Long Long Long Long Long long long Title of the Content</h1>
-      <div class="font-semibold pt-2 pb-5">
-        <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
-          #rails
-        </span>
-        <span class="inline-block bg-orange-lighter rounded-full px-3 py-1 mr-1 mb-1">
-          #Vue.js
-        </span>
-      </div>
-      <div class="text-center xl:hidden">
-        <button class="border-2 border-blue rounded bg-white w-64 h-10 sticky"><font-awesome-icon icon="thumbs-up" class="text-md"/><span class="px-3">123</span></button>
-      </div>
-     <div id="compiledPost" v-html="compiledHTML"></div>
-    </div>
-    <div class="hidden md:block">
-      some
+    <div class="w-full bg-white mt-10 py-24">
+     <div class="flex flex-grow w-full lg:max-w-3xl lg:mx-auto">
+       <div class="w-full lg:w-7/10 lg:ml-32 lg:mr-64 border rounded">
+         <textarea  class="text-sm p-3 w-full h-32 resize-none border rounded" placeholder="コメントを投稿"></textarea>
+       </div>
+     </div>
     </div>
   </div>
 </template>

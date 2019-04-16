@@ -13,6 +13,9 @@ import MyFollowers from './components/MyFollowers.vue'
 import Like from './components/Like.vue'
 import Drafts from './components/Drafts.vue'
 import NewPost from './components/NewPost.vue'
+import Settings from './components/Settings.vue'
+import Profile from './components/Profile.vue'
+import Password from './components/Password.vue'
 
 Vue.use(Router)
 
@@ -87,6 +90,21 @@ export default new Router({
     {
       path: '/:id/drafts/new',
       component: NewPost
-    }
+    },
+    {
+      path: '/:id/settings',
+      component: Settings,
+      redirect: '/:id/settings/profile',
+      children: [
+        {
+          path: '/:id/settings/profile',
+          component: Profile
+        },
+        {
+          path: '/:id/settings/password',
+          component: Password
+        },
+      ]
+    },
   ]
 })

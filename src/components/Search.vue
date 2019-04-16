@@ -1,8 +1,8 @@
 <template>
-  <div class="md:flex mx-auto py-4 max-w-2xl text-left">
+  <div class="md:flex mx-auto mt-4 md:mt-8 max-w-2xl text-left">
     <div class="w-full md:w-2/3 text-center">
       <form class="w-full">
-        <div class="flex items-stretch">
+        <div class="flex items-stretch px-1">
           <input type="text" class="border appearance-none p-1 w-full">
           <button class="w-32 bg-blue border rounded ml-3 text-white hover:bg-blue-dark"><font-awesome-icon icon="search" class="text-sm text-white hover:text-blue-light mr-1"/>検索</button>
         </div>

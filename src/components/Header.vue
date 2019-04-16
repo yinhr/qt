@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="bg-blue-dark py-2 px-4">
-      <div class="max-w-2xl m-auto flex flex-wrap items-center justify-between">
+      <div class="max-w-3xl m-auto flex flex-wrap items-center justify-between">
         <div class="flex items-center">
           <router-link to="/" class="link-grey">
             <svg width="75" height="46" view-box="0 0 75 46">
@@ -63,7 +63,7 @@
                     </p>
                   </div>
                 </router-link>
-                <router-link to="/" class="no-underline">
+                <router-link to="/yinhr/settings" class="no-underline">
                   <div class="mx-2 p-2">
                     <p class="text-black hover:text-blue">
                       <span class="mr-2"><font-awesome-icon icon="cog"/></span>

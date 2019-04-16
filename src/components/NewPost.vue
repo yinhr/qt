@@ -49,9 +49,6 @@ export default {
     }
   },
   computed: {
-    compiledHTML: function() {
-      return "<div>test</div>"
-    },
     leftPanelClass: function() {
       return {
         'hidden': this.isMatched(1),

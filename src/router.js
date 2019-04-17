@@ -17,6 +17,8 @@ import Settings from './components/Settings.vue'
 import Profile from './components/Profile.vue'
 import Password from './components/Password.vue'
 
+import Test from './components/TestComponent.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +29,10 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/test',
+      component: Test
     },
     {
       path: '/about',

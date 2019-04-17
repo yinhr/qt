@@ -15,7 +15,7 @@
       </div>
       <label for="" >自己紹介</label>
       <div class="flex item-stretch">
-        <textarea class="w-full resize-none border"placeholder="200文字以内"></textarea>
+        <textarea class="w-full resize-none border" placeholder="200文字以内"></textarea>
       </div>
     </form>
   </div>

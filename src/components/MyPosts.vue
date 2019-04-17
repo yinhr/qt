@@ -76,7 +76,7 @@ export default {
         },
         { 
           id: 3,
-          title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",
+          title: "VeryveryveryveryverLongLongLongLongLongLonglonglongTitloftheTitleTItleTItleTitleContent",
           author: "Jonathan Reinink",
           createdOn: "2019 Apr 4",
           numberOfLike: 108,

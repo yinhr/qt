@@ -1,5 +1,5 @@
 <template>
-  <div class="md:flex mx-auto mt-4 md:mt-8 max-w-2xl text-left">
+  <div class="md:flex w-full self-center mt-4 md:mt-8 max-w-2xl text-left">
     <div class="w-full md:w-2/3 text-center">
       <form class="w-full">
         <div class="flex items-stretch px-1">
@@ -80,7 +80,7 @@ export default {
       posts: [
         { 
           id: 1,
-          title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",
+          title: "VeryveryveryveryveryLongLongLongLongLongLonglong long Title of the Content",
           author: "Jonathan Reinink",
           createdOn: "2019 Apr 4",
           numberOfLike: 108,

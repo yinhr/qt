@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto py-4 max-w-xl text-left">
+  <div class="w-full self-center py-4 max-w-xl text-left">
     <h2 class="pl-3 mb-3"><span class="mr-3"><font-awesome-icon icon="stream" class="text-2xl"/></span>タイムライン</h2>
     <PostList v-bind:posts="posts"></PostList>
   </div>
@@ -17,7 +17,7 @@ export default {
       posts: [
         { 
           id: 1,
-          title: "Very very very very very Long Long Long Long Long Long long long Title of the Content",
+          title: "VeryveryveryveryveryLongLongLongLongLongLonglong long Title of the Content",
           author: "Jonathan Reinink",
           createdOn: "2019 Apr 4",
           numberOfLike: 108,

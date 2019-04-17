@@ -8,6 +8,7 @@
 <style>
 html, body, #app {
   @apply h-screen;
+  @apply break-words;
 }
 
 #app {

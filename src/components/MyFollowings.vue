@@ -1,16 +1,12 @@
 <template>
   <div>
-    <div class="mx-auto py-1 flex flex-wrap">
-      <div
-        v-for="following in followings" 
-        v-bind:key="following.id"
-        class="rounded bg-white p-3 h-64 w-full md:w-1/3 border"
-      >
-        <div class="flex">
-          <div class="w-2/5">
+    <div class="py-1 flex flex-wrap">
+      <div v-for="following in followings" v-bind:key="following.id" class="rounded p-3 w-1/2 xl:w-1/3 h-64 border flex flex-col">
+        <div class="md:flex">
+          <div class="md:w-2/5">
             <img class="w-12 h-12 rounded-full" v-bind:src="following.imgSrc" alt="default avatar">
           </div>
-          <div class="w-3/5 self-center">
+          <div class="md:w-3/5 self-center">
             <button class="bg-blue hover:bg-blue-dark text-white font-semibold py-2 px-2 rounded text-xs">
                 <font-awesome-icon icon="plus" class="text-xs"/>
                 <font-awesome-icon icon="user" class="text-xs mr-1"/>フォロー
@@ -18,7 +14,7 @@
           </div>
         </div>
         <div class="text-left pt-2 text-sm font-semibold">{{ following.userName }}</div>
-        <div class="h-32 text-left pt-2 leading-tight text-sm break-words overflow-hidden">{{ following.description }}</div>
+        <div class="flex-grow text-left pt-2 text-sm overflow-hidden">{{ following.description }}</div>
       </div>
     </div>
     <paginate

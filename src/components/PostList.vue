@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto py-1">
-    <div v-for="post in posts" v-bind:key="post.id" class="mb-1 rounded bg-white p-2 flex">
+    <div v-for="post in posts" v-bind:key="post.id" class="mb-1 rounded p-2 flex">
       <div class="p-1 w-1/7 md:w-1/10">
         <img class="w-4/5 rounded-full self-center" v-bind:src="post.imgSrc" alt="default avatar">
       </div>

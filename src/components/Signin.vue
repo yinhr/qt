@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-1/3 mx-auto my-4 p-2 border-grey-darker shadow-md rounded bg-white">
+  <div class="w-full max-w-sm self-center my-4 p-2 border-grey-darker shadow-md rounded">
     <h1 class="mb-5 text-grey-darker">Sign In</h1>
     <form action="">
       <div class="mb-5">

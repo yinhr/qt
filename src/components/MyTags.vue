@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="tag in tags" v-bind:key="tag.id" class="w-full">
-      <div class="flex justify-between bg-white h-16 border">
+      <div class="flex justify-between h-16 border">
         <div class="pl-3 self-center truncate">
           {{ tag.tagName }}
         </div>

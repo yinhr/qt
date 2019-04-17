@@ -20,14 +20,14 @@
         :page-class="'border-t border-b border-r hover:bg-blue-lightest'"
         :page-link-class="'block text-center align-middle p-2'"
         :prev-class="'border rounded-l hover:bg-blue-lightest'"
-        :prev-link-class="'block w-12 text-center align-middle p-2'"
+        :prev-link-class="'block w-14 text-center align-middle p-2'"
         :next-class="'border-t border-b border-r rounded-r hover:bg-blue-lightest'"
-        :next-link-class="'block w-12 text-center align-middle p-2'"
+        :next-link-class="'block w-14 text-center align-middle p-2'"
       >
       </paginate>
     </div>
     <div class="w-full md:w-1/3 px-2">
-      <div class="bg-white w-full h-64 text-center p-5">
+      <div class="w-full h-64 text-center p-5">
         <div class="break-words h-24 flex justify-center items-center">
           <div class="break-words w-full">
             <h3>Rails</h3>
@@ -50,7 +50,7 @@
           </button>
         </div>
       </div>
-      <div class="mt-3 p-3 bg-white border w-full h-64">
+      <div class="mt-3 p-3 border w-full h-64">
         <div class="text-sm"><font-awesome-icon icon="search" class="text-sm"/>検索オプション</div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-2/3 p-5 bg-white border">
+  <div class="w-full md:w-2/3 p-5 border">
     <form action="" class="text-left">
       <label for="" >ユーザー名</label>
       <div class="flex item-stretch">

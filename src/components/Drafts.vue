@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto py-4 max-w-2xl text-left">
     <h2 class="pl-3 mb-3"><span class="mr-3"><font-awesome-icon icon="list" class="text-2xl"/></span>下書き一覧</h2>
-    <div v-for="draft in drafts" v-bind:key="draft.id" class="mb-1 rounded p-3">
+    <div v-for="draft in drafts" v-bind:key="draft.id" class="mb-1 rounded p-3 border">
       <div class="text-left pb-1">
         <router-link to="/post" class="no-underline font-bold text-lg text-black hover:text-blue">
           {{ draft.title }}

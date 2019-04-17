@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <div class="lg:flex lg:mt-8 mx-auto max-w-3xl text-sm">
-      <div class="hidden lg:block lg:w-1/10">
-        <div class="py-3 sticky like font-semibold text-blue">123</div>
-        <button class="hover:bg-blue-lightest border-2 border-blue shadow like-button w-16 h-16 rounded-full sticky"><font-awesome-icon icon="thumbs-up" class="text-3xl"/></button>
+  <div class="w-full max-w-3xl self-center">
+    <div class="lg:flex lg:mt-8 text-sm">
+      <div class="hidden lg:block lg:w-1/10 lg:sticky lg:pin-t lg:self-start">
+        <div class="py-3 font-semibold text-blue">123</div>
+        <button class="hover:bg-blue-lightest border-2 border-blue shadow w-16 h-16 rounded-full"><font-awesome-icon icon="thumbs-up" class="text-3xl"/></button>
       </div>
-      <div class="px-6 py-4 text-left w-full lg:w-7/10">
+      <div class="px-6 py-4 text-left w-full lg:w-7/10 border">
         <div class="py-1 flex flex-wrap">
           <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
           <div class="px-3 self-center text-base">@Jonathan Reinink</div>
@@ -25,16 +25,42 @@
         </div>
        <div id="compiledPost" v-html="compiledHTML"></div>
       </div>
-      <div class="hidden lg:block lg:w-2/10">sdfsdf</div>
+      <div class="hidden lg:block lg:w-2/10 px-2">記事見出しリンクを作成予定</div>
     </div>
-    <div class="w-full mt-10 py-24">
-     <div class="flex flex-grow w-full lg:max-w-3xl lg:mx-auto">
-       <div class="hidden lg:block lg:w-1/10"></div>
-       <div class="w-full lg:w-7/10 border rounded">
-         <textarea  class="text-sm p-3 w-full h-32 resize-none border rounded" placeholder="コメントを投稿"></textarea>
-       </div>
-       <div class="hidden lg:block lg:w-2/10"></div>
-     </div>
+    <div class="w-full max-w-3xl mt-10 px-6 lg:px-0 border-t">
+      <div class="flex">
+        <div class="hidden lg:block lg:w-1/10"></div>
+        <div class="w-full lg:w-7/10">
+          <div class="w-full my-4 text-left">
+            <div class="flex px-2 py-3">
+              <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+              <div class="px-2 text-sm self-center">
+                <div class="pb-1">@JonathanReinink</div>
+                <div>2019-04-20 09:23</div>
+              </div>
+            </div>
+            <div class="p-4 border comment">
+              ccommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentomment
+            </div>
+          </div>
+          <div class="w-full my-4 text-left">
+            <div class="flex px-2 py-3">
+              <img class="w-10 h-10 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
+              <div class="px-2 text-sm self-center">
+                <div class="pb-1">@JonathanReinink</div>
+                <div>2019-04-20 09:23</div>
+              </div>
+            </div>
+            <div class="p-4 border comment">
+              ccommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentcommentomment
+            </div>
+          </div>
+          <div class="py-8">
+            <textarea  class="text-sm p-4 w-full h-32 resize-none border rounded" placeholder="コメントを投稿"></textarea>
+          </div>
+        </div>
+        <div class="hidden lg:block lg:w-2/10"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -154,14 +180,6 @@ export default {
 <style>
 @import url("../../node_modules/highlightjs/styles/zenburn.css");
 
-.like {
-  top: 100px;
-}
-
-.like-button {
-  top: 145px;
-}
-
 #compiledPost table tbody tr:nth-child(odd) {
   background-color: #f1f5f8;
 }
@@ -171,4 +189,30 @@ export default {
   margin-right: 3px;
   margin-left: 3px;
 }
+
+.comment {
+  @apply relative;
+}
+
+.comment::before {
+  @apply absolute;
+  content: "";
+  top: -20px;
+  left: 1rem;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #dae1e7;
+  @apply rounded;
+}
+
+.comment::after {
+  @apply absolute;
+  content: "";
+  top: -19px;
+  left: 1rem;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
 </style>

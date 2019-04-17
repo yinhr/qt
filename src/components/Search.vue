@@ -27,7 +27,7 @@
       </paginate>
     </div>
     <div class="w-full md:w-1/3 px-2">
-      <div class="w-full h-64 text-center p-5">
+      <div class="w-full h-64 text-center p-5 border">
         <div class="break-words h-24 flex justify-center items-center">
           <div class="break-words w-full">
             <h3>Rails</h3>

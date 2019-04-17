@@ -1,6 +1,6 @@
 <template>
   <div class="md:flex w-full max-w-2xl self-center md:mt-8">
-    <div class="p-3 w-full md:w-1/4 md:self-start">
+    <div class="p-3 w-full md:w-1/4 md:self-start border">
       <div class="py-1">
         <img class="w-32 h-32 rounded-full" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">
       </div>

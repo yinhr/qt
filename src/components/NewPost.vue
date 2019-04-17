@@ -15,7 +15,7 @@
      <div class="w-full h-8 flex-no-grow flex flex-row-reverse items-stretch px-1">
        <div class="border relative w-8 bg-blue hover:bg-blue-dark rounded-r" @click="isActive = !isActive">
          <font-awesome-icon icon="caret-up" class="h-full text-sm text-white"/>
-         <ul v-if="isActive" class="text-sm text-left list-reset w-48 border rounded absolute z-20 pin-r pin-b mb-10">
+         <ul v-if="isActive" class="text-sm text-left list-reset w-48 border rounded absolute z-20 pin-r pin-b mb-10 bg-white">
            <li class="p-2 hover:bg-blue-lighter" @click="buttonNumber = 3"><font-awesome-icon icon="save" class="text-sm mr-2"/>下書き保存</li>
            <li class="p-2 hover:bg-blue-lighter" @click="buttonNumber = 2"><font-awesome-icon icon="lock" class="text-sm mr-2"/>非公開投稿</li>
            <li class="p-2 hover:bg-blue-lighter" @click="buttonNumber = 1"><font-awesome-icon icon="upload" class="text-sm mr-2"/>投稿</li>
